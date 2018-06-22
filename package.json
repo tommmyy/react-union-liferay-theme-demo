@@ -1,0 +1,53 @@
+{
+  "name": "react-union-liferay-theme-demo",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "repository": "https://github.com/tommmyy/react-union-liferay-theme-demo",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "document-ready": "^2.0.1",
+    "prop-types": "15.6.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-hot-loader": "^4.3.3",
+    "react-redux": "^5.0.7",
+    "react-union": "0.2.0",
+    "rebass": "^2.0.0-6",
+    "redbox-react": "1.5.0",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-extensible-store": "^0.1.1",
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.0.1",
+    "babel-preset-react": "6.23.0",
+    "eslint": "4.7.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react-union": "0.2.0",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "7.4.0",
+    "prettier": "1.10.2",
+    "react-test-renderer": "16.4.1",
+    "react-union-scripts": "0.3.0",
+    "skin-deep": "1.2.0"
+  },
+  "scripts": {
+    "build": "react-union-scripts build",
+    "build:liferay": "react-union-scripts build --target liferay",
+    "start": "react-union-scripts start --app SampleApp",
+    "start:proxy": "react-union-scripts start --app SampleApp --proxy --target liferay",
+    "test": "yarn lint && yarn test:js",
+    "test:js": "react-union-scripts test",
+    "lint": "yarn lint:eslint",
+    "lint:eslint": "eslint --ext .js ./"
+  }
+}
